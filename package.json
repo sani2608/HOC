@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "preview": "vite preview --port 8080"
   },
+  "homepage": "http://sani2608.github.io/react-higher-order-components",
   "dependencies": {
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
